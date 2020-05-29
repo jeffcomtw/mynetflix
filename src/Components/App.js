@@ -27,7 +27,10 @@ const App = (props) => {
 					src="https://assets.brand.microsites.netflix.io/assets/1ed15bca-b389-11e7-9274-06c476b5c346_cm_800w.png?v=21"
 				/>
 			</div>
-			{error && <div>Oopps</div>}
+			{error && <div className="error-message">{error}</div>}
+			{!error && isLoading && (
+				<div className="loading-message">I am Loading</div>
+			)}
 			{!error && !isLoading && (
 				<div className="list-wrapper">
 					<List
