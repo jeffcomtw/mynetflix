@@ -66,11 +66,7 @@ font {
 .error-message {
 	color: red;
 }
-.loading-message {
-	color: green;
-}
 
-.loading-message,
 .error-message {
 	position: absolute;
 	left: 50%;

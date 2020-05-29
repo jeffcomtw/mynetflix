@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { getAll, removeFromList, moveToMyList } from "../redux/actions";
 import List from "./List";
 import "./App.css";
+import "./spinner.css";
 
 const App = (props) => {
 	useEffect(() => {
@@ -29,7 +30,20 @@ const App = (props) => {
 			</div>
 			{error && <div className="error-message">{error}</div>}
 			{!error && isLoading && (
-				<div className="loading-message">I am Loading</div>
+				<div className="lds-spinner">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
 			)}
 			{!error && !isLoading && (
 				<div className="list-wrapper">
