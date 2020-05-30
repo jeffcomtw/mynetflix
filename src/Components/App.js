@@ -67,7 +67,7 @@ const App = (props) => {
 						{mylist.map((item) => {
 							return (
 								<li key={item.id}>
-									<h4>{item.title}</h4>
+									<h4 className="title-format">{item.title}</h4>
 								</li>
 							);
 						})}
