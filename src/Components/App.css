@@ -5,6 +5,7 @@ body {
 	margin: 0;
 }
 ul {
+	list-style-type: none;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
